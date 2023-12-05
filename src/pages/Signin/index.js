@@ -31,24 +31,24 @@ const Signin = () => {
 
   return (
     <C.Container>
-      <C.Label>SISTEMA DE LOGIN</C.Label>
+      <C.Label>LOGIN</C.Label>
       <C.Content>
         <Input
           type="email"
-          placeholder="Digite seu E-mail"
+          placeholder="E-mail"
           value={email}
           onChange={(e) => [setEmail(e.target.value), setError("")]}
         />
         <Input
           type="password"
-          placeholder="Digite sua Senha"
+          placeholder="Senha"
           value={senha}
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
         <C.labelError>{error}</C.labelError>
         <Button Text="Entrar" onClick={handleLogin} />
         <C.LabelSignup>
-          Não tem uma conta?
+           
           <C.Strong>
             <Link to="/signup">&nbsp;Registre-se</Link>
           </C.Strong>

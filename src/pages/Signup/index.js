@@ -36,11 +36,11 @@ const Signup = () => {
 
   return (
     <C.Container>
-      <C.Label>SISTEMA DE LOGIN</C.Label>
+      <C.Label>INSCRIÇÃO</C.Label>
       <C.Content>
         <Input
           type="email"
-          placeholder="Digite seu E-mail"
+          placeholder="E-mail"
           value={email}
           onChange={(e) => [setEmail(e.target.value), setError("")]}
         />
@@ -52,14 +52,14 @@ const Signup = () => {
         />
         <Input
           type="password"
-          placeholder="Digite sua Senha"
+          placeholder="Senha"
           value={senha}
           onChange={(e) => [setSenha(e.target.value), setError("")]}
         />
         <C.labelError>{error}</C.labelError>
         <Button Text="Inscrever-se" onClick={handleSignup} />
         <C.LabelSignin>
-          Já tem uma conta?
+          Já possui uma conta?
           <C.Strong>
             <Link to="/">&nbsp;Entre</Link>
           </C.Strong>
